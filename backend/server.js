@@ -21,11 +21,13 @@ dotenv.config();
 // });
 import express from 'express';
 import modelsRoutes from './routes/models.routes.js'; // Adjust path if necessary
-
+import chatRoutes from './routes/chat.js';
 const app = express();
 
 app.use(express.json());
-app.use('/models', modelsRoutes);
+app.use(express.urlencoded({ extended: true })); // ✅ To handle form data
 
+app.use('/models', modelsRoutes);
+app.use('/api', chatRoutes);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
