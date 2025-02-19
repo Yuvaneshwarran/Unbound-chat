@@ -3,6 +3,6 @@ import { getModels } from '../controllers/models.controllers.js'; // Adjust the 
 
 const router = express.Router();
 
-router.get('/models', getModels);
+router.get('/getmodels', getModels);
 
 export default router;

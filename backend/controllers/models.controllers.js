@@ -4,6 +4,7 @@ const prisma = new PrismaClient();
 
 export const getModels = async (req, res) => {
     try {
+        // console.log("here");
         const models = await prisma.aibots.findMany({
             select: { name: true }, // Select only the name field
         });
