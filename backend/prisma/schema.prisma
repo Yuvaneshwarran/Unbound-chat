@@ -18,7 +18,16 @@ model User {
   email    String  @unique
   password String  @db.VarChar(100)
 }
+
 model aibots {
   id          String   @id @default(uuid())
   name        String
 }
+
+model RoutingRule {
+  id             String  @id @default(uuid())
+  originalModel  String
+  regexPattern   String
+  redirectModel  String
+}
+
