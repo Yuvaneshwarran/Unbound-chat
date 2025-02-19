@@ -22,8 +22,10 @@ dotenv.config();
 import express from 'express';
 import modelsRoutes from './routes/models.routes.js'; // Adjust path if necessary
 import chatRoutes from './routes/chat.js';
-const app = express();
+import cors from "cors";
 
+const app = express();
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // ✅ To handle form data
 

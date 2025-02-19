@@ -6,8 +6,8 @@ export const getResponseForProvider = (provider, model, prompt) => {
     };
 
     return {
-        provider,
-        model,
+        // provider,
+        // model,
         response: responses[model] || "Unknown provider response.",
     };
 };

@@ -39,8 +39,9 @@ export const handleChatCompletion = async (req, res) => {
 
         // Step 3: Get response from the selected model
         const response = getResponseForProvider(provider, redirectedModel, prompt);
-
-        res.json({ provider, model, response });
+        console.log("Response");
+        // res.json({ provider, model, response });
+        res.json(response);
     } catch (error) {
         console.error('Error handling chat completion:', error);
         res.status(500).json({ error: 'Internal Server Error' });
