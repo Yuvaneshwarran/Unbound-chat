@@ -93,3 +93,6 @@ DATABASE_URL="postgresql://username:password@localhost:5432/dbname"
 3. Set up the frontend (follow Frontend Setup)
 4. Ensure all environment variables are properly configured
 5. Start both servers and begin development
+
+## Demo Video
+https://github.com/Yuvaneshwarran/Unbound-chat/blob/main/video/2025-02-19-19-06-46_rzIZG0E1.mp4
