@@ -24,3 +24,10 @@ model RoutingRule {
   regexPattern  String
   redirectModel String
 }
+
+model RegexPolicy {
+  id            String @id
+  originalModel String
+  redirectModel String
+  regexrule     String
+}
